@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <title>Selezionare gli Elementi HTML</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- caricamento libreria jQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
 </head>
 <body>
-  <h1 id="tit">Selezionare gli Elementi HTML di una lista</h1>
+  <h1>Selezionare gli Elementi HTML di una lista</h1>
   <p>Sono Enrico!</p>
   <ul class="color">
     <li>Selezionare tag DOM</li>
@@ -14,7 +15,10 @@
   </ul>
 
     <script>
-        $("li").css("color","red");
+        $("li").css("color","red"); //cambiare colore agli elementi della lista
+        $("p").wrap("<div></div>"); //inserito un div prima e dopo il paragrafo
+        $("ul").wrap("<div></div>"); //inserito un div all'inizio ed alla fine della lista
+        $("li").wrap("<p></p>"); //inserito un paragrafo p prima e dopo ogni elemento della lista
     </script>
 </body>
 </html>
